@@ -1,0 +1,23 @@
+#padding #socialicons{
+	display: block;
+	padding-bottom: 10px;
+	}
+
+aside #socialicons{
+	display: none;
+	}	
+
+aside {
+	padding-top: 40px;
+	}
+
+#sideTitle{
+	padding-bottom: 10px;
+	}
+
+section #padding{
+	margin-top: 0;
+	padding-top: 30px;
+	padding-left: 20px;
+	margin-left: 10px;
+	}

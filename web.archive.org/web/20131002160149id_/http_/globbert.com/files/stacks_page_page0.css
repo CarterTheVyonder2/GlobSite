@@ -1,0 +1,996 @@
+
+.bgstretcher-area { text-align: left; }
+.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.bgstretcher UL, .bgstretcher UL LI {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.bgstretcher {
+	background: #000000;
+	overflow: hidden;
+	width: 100%;
+	position: fixed !important;
+	z-index: 1;
+	_position: absolute; /*IE6 doesn't support fixed positioning*/
+	top: 0;
+	left: 0;
+}
+div#inputimages	{
+	display: none;
+}
+
+/* FlowBox 3rd Generation - 13-Jan-2012 - revised 24-Feb-2012 */
+/* in case of reponse questions
+video{max-width:100%;height:auto;}
+*/
+/* @group ColorBox Styling Group for FlowBox Stack Usage */
+
+/* @group Style 1 */
+
+#colorbox,#cbox1Overlay,#cbox1Wrapper{position:absolute;top:0;left:0;z-index:21001;overflow:hidden;}
+#cbox1Overlay{position:fixed;width:100%;height:100%;}
+#cbox1MiddleLeft,#cbox1BottomLeft{clear:left;}
+#cbox1Content{position:relative;}
+#cbox1LoadedContent{overflow:auto;}
+#cbox1Title{margin:0;}
+#cbox1LoadingOverlay,#cbox1LoadingGraphic{position:absolute;top:0;left:0;width:100%;}
+#cbox1Previous,#cbox1Next,#cbox1Close,#cbox1Slideshow{cursor:pointer;}
+.cbox1Photo{float:left;margin:auto;border:0;display:block;}
+.cbox1Iframe{width:100%;height:100%;display:block;border:0;}
+/* User Style:1 */
+#cbox1Overlay{background:url(../../../../20131224153749id_/http_/globbert.com/files/overlay1.png) repeat 0 0;}
+#colorbox{}
+#cbox1TopLeft{width:21px;height:21px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -100px 0;}
+#cbox1TopRight{width:21px;height:21px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -129px 0;}
+#cbox1BottomLeft{width:21px;height:21px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -100px -29px;}
+#cbox1BottomRight{width:21px;height:21px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -129px -29px;}
+#cbox1MiddleLeft{width:21px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) left top repeat-y;}
+#cbox1MiddleRight{width:21px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) right top repeat-y;}
+#cbox1TopCenter{height:21px;background:url(../../../../20131224153652id_/http_/globbert.com/files/border1.png) 0 0 repeat-x;}
+#cbox1BottomCenter{height:21px;background:url(../../../../20131224153652id_/http_/globbert.com/files/border1.png) 0 -29px repeat-x;}
+#cbox1Content{background:#FFFFFF;overflow:hidden;}
+#cbox1Error{padding:50px;border:1px solid #ccc;}
+#cbox1LoadedContent{margin-bottom:28px;padding: 5px;}
+#cbox1Title{position:absolute;bottom:4px;left:0;text-align:center;width:100%;color:#000000;}
+#cbox1Current{position:absolute;bottom:4px;left:58px;color:#000000;}
+#cbox1Slideshow{position:absolute;bottom:4px;right:30px;color:#000000;}
+#cbox1Previous{position:absolute;bottom:0;left:0;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -75px 0;width:25px;height:25px;text-indent:-9999px;color:#000000;}
+#cbox1Previous.hover{background-position:-75px -25px;}
+#cbox1Next{position:absolute;bottom:0;left:27px;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -50px 0;width:25px;height:25px;text-indent:-9999px;color:#000000;}
+#cbox1Next.hover{background-position:-50px -25px;}
+#cbox1LoadingOverlay{background:url(../../../../20131224153045id_/http_/globbert.com/files/loading_background1.png) no-repeat center center;}
+#cbox1LoadingGraphic{background:url(../../../../20131224153423id_/http_/globbert.com/files/loading1.gif) no-repeat center center;}
+#cbox1Close{position:absolute;bottom:0;right:0;background:url(../../../../20131224153156id_/http_/globbert.com/files/controls1.png) no-repeat -25px 0;width:25px;height:25px;text-indent:-9999px;color:#000000;}
+#cbox1Close.hover{background-position:-25px -25px;}
+/* The following fixes a problem where IE7+ replaces a PNG's alpha transparency with a black fill
+when an alpha filter (opacity change) is set on the element or ancestor element. */
+.cbox1IE #cbox1TopLeft,
+.cbox1IE #cbox1TopCenter,
+.cbox1IE #cbox1TopRight,
+.cbox1IE #cbox1BottomLeft,
+.cbox1IE #cbox1BottomCenter,
+.cbox1IE #cbox1BottomRight,
+.cbox1IE #cbox1MiddleLeft,
+.cbox1IE #cbox1MiddleRight{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);}
+/* The following provides PNG transparency support for IE6 */
+.cbox1IE6 #cbox1TopLeft{background:url(../../../../20131224153651id_/http_/globbert.com/files/borderTopLeft1.png);}
+.cbox1IE6 #cbox1TopCenter{background:url(../../../../20131224152938id_/http_/globbert.com/files/borderTopCenter11.html);}
+.cbox1IE6 #cbox1TopRight{background:url(../../../../20131224153856id_/http_/globbert.com/files/borderTopRight11.html);}
+.cbox1IE6 #cbox1BottomLeft{background:url(../../../../20131224153756id_/http_/globbert.com/files/borderBottomLeft1.png);}
+.cbox1IE6 #cbox1BottomCenter{background:url(../../../../20131224153019id_/http_/globbert.com/files/borderBottomCenter1.png);}
+.cbox1IE6 #cbox1BottomRight{background:url(../../../../20131224153817id_/http_/globbert.com/files/borderBottomRight1.png);}
+.cbox1IE6 #cbox1MiddleLeft{background:url(../../../../20131224153239id_/http_/globbert.com/files/borderMiddleLeft1.png);}
+.cbox1IE6 #cbox1MiddleRight{background:url(../../../../20131224153849id_/http_/globbert.com/files/borderMiddleRight1.png);}
+.cbox1IE6 #cbox1TopLeft,
+.cbox1IE6 #cbox1TopCenter,
+.cbox1IE6 #cbox1TopRight,
+.cbox1IE6 #cbox1BottomLeft,
+.cbox1IE6 #cbox1BottomCenter,
+.cbox1IE6 #cbox1BottomRight,
+.cbox1IE6 #cbox1MiddleLeft,
+.cbox1IE6 #cbox1MiddleRight{_behavior:expression(this.src = this.src ? this.src :this.currentStyle.backgroundImage.split('"')[1],this.style.background = "none",this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ",sizingMethod='scale')");}
+
+/* @end */
+
+/* ColorBox Core Style:2 */
+
+/* @group Style 2 */
+/* Core Style:2 */
+#colorbox,#cbox2Overlay,#cbox2Wrapper{position:absolute;top:0;left:0;z-index:21001;overflow:hidden;}
+#cbox2Overlay{position:fixed;width:100%;height:100%;}
+#cbox2MiddleLeft,#cbox2BottomLeft{clear:left;}
+#cbox2Content{position:relative;}
+#cbox2LoadedContent{overflow:auto;}
+#cbox2Title{margin:0;}
+#cbox2LoadingOverlay,#cbox2LoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%;}
+#cbox2Previous,#cbox2Next,#cbox2Close,#cbox2Slideshow{cursor:pointer;}
+.cbox2Photo{float:left;margin:auto;border:0;display:block;}
+.cbox2Iframe{width:100%;height:100%;display:block;border:0;}
+/* User Style:2 */
+#cbox2Overlay{background:#fff;}
+#colorbox{}
+#cbox2Content{margin-top:32px;overflow:visible;}
+.cbox2Iframe{background:#fff;}
+#cbox2Error{padding:50px;border:1px solid #ccc;}
+#cbox2LoadedContent{background:#000;padding:5px;}
+#cbox2LoadingGraphic{background:url(../../../../20131224153358id_/http_/globbert.com/files/loading2.gif) no-repeat center center;}
+#cbox2LoadingOverlay{background:#000;}
+#cbox2Title{position:absolute;top:-22px;left:0;color:#000;}
+#cbox2Current{position:absolute;top:-22px;right:205px;text-indent:-9999px;}
+#cbox2Slideshow,#cbox2Previous,#cbox2Next,#cbox2Close{text-indent:-9999px;width:20px;height:20px;position:absolute;top:-20px;background:url(../../../../20131224153713id_/http_/globbert.com/files/controls2.png) no-repeat 0 0;}
+#cbox2Previous{background-position:0px 0px;right:44px;}
+#cbox2Previous:hover{background-position:0px -25px;}
+#cbox2Next{background-position:-25px 0px;right:22px;}
+#cbox2Next:hover{background-position:-25px -25px;}
+#cbox2Close{background-position:-50px 0px;right:0;}
+#cbox2Close:hover{background-position:-50px -25px;}
+.cbox2Slideshow_on #cbox2Previous,.cbox2Slideshow_off #cbox2Previous{right:66px;}
+.cbox2Slideshow_on #cbox2Slideshow{background-position:-75px -25px;right:44px;}
+.cbox2Slideshow_on #cbox2Slideshow:hover{background-position:-100px -25px;}
+.cbox2Slideshow_off #cbox2Slideshow{background-position:-100px 0px;right:44px;}
+.cbox2Slideshow_off #cbox2Slideshow:hover{background-position:-75px -25px;}
+
+/* @end */
+/* ColorBox Core Style:3 */
+
+/* @group Style 3 */
+/* Core Style:3 */
+#colorbox,#cbox3Overlay,#cbox3Wrapper{position:absolute;top:0;left:0;z-index:21001;overflow:hidden;}
+#cbox3Overlay{position:fixed;width:100%;height:100%;}
+#cbox3MiddleLeft,#cbox3BottomLeft{clear:left;}
+#cbox3Content{position:relative;}
+#cbox3LoadedContent{overflow:auto;}
+#cbox3Title{margin:0;}
+#cbox3LoadingOverlay,#cbox3LoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%;}
+#cbox3Previous,#cbox3Next,#cbox3Close,#cbox3Slideshow{cursor:pointer;}
+.cbox3Photo{float:left;margin:auto;border:0;display:block;}
+.cbox3Iframe{width:100%;height:100%;display:block;border:0;}
+/* User Style:3 */
+#cbox3Overlay{background:#000;}
+#colorbox{}
+#cbox3Content{margin-top:20px;}
+.cbox3Iframe{background:#fff;}
+#cbox3Error{padding:50px;border:1px solid #ccc;}
+#cbox3LoadedContent{border:5px solid #000;background:#000;padding: 5px;background-color: none;}
+#cbox3Title{position:absolute;top:-20px;left:0;color:#ccc;}
+#cbox3Current{position:absolute;top:-20px;right:0px;color:#ccc;}
+#cbox3Slideshow{position:absolute;top:-20px;right:90px;color:#fff;}
+#cbox3Previous{position:absolute;top:50%;left:5px;margin-top:-32px;background:url(../../../../20131224154004id_/http_/globbert.com/files/controls3.png) no-repeat top left;width:28px;height:65px;text-indent:-9999px;}
+#cbox3Previous:hover{background-position:bottom left;}
+#cbox3Next{position:absolute;top:50%;right:5px;margin-top:-32px;background:url(../../../../20131224154004id_/http_/globbert.com/files/controls3.png) no-repeat top right;width:28px;height:65px;text-indent:-9999px;}
+#cbox3Next:hover{background-position:bottom right;}
+#cbox3LoadingOverlay{background:#000;}
+#cbox3LoadingGraphic{background:url(../../../../20131224153022id_/http_/globbert.com/files/loading3.gif) no-repeat center center;}
+#cbox3Close{position:absolute;top:5px;right:5px;display:block;background:url(../../../../20131224154004id_/http_/globbert.com/files/controls3.png) no-repeat top center;width:38px;height:19px;text-indent:-9999px;}
+#cbox3Close:hover{background-position:bottom center;}
+
+/* @end */
+/* ColorBox Core Style:4 */
+
+/* @group Style 4  */
+/* Core Style:4 */
+#colorbox,#cbox4Overlay,#cbox4Wrapper{position:absolute;top:0;left:0;z-index:21001;overflow:hidden;}
+#cbox4Overlay{position:fixed;width:100%;height:100%;}
+#cbox4MiddleLeft,#cbox4BottomLeft{clear:left;}
+#cbox4Content{position:relative;}
+#cbox4LoadedContent{overflow:auto;}
+#cbox4Title{margin:0;}
+#cbox4LoadingOverlay,#cbox4LoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%;}
+#cbox4Previous,#cbox4Next,#cbox4Close,#cbox4Slideshow{cursor:pointer;}
+.cbox4Photo{float:left;margin:auto;border:0;display:block;}
+.cbox4Iframe{width:100%;height:100%;display:block;border:0;}
+/* User Style:4 */
+#cbox4Overlay{background:#fff;}
+#colorbox{}
+#cbox4TopLeft{width:25px;height:25px;background:url(../../../../20131224152830id_/http_/globbert.com/files/border14.png) no-repeat 0 0;}
+#cbox4TopCenter{height:25px;background:url(../../../../20131224152830id_/http_/globbert.com/files/border14.png) repeat-x 0 -50px;}
+#cbox4TopRight{width:25px;height:25px;background:url(../../../../20131224152830id_/http_/globbert.com/files/border14.png) no-repeat -25px 0;}
+#cbox4BottomLeft{width:25px;height:25px;background:url(../../../../20131224152830id_/http_/globbert.com/files/border14.png) no-repeat 0 -25px;}
+#cbox4BottomCenter{height:25px;background:url(../../../../20131224152830id_/http_/globbert.com/files/border14.png) repeat-x 0 -75px;}
+#cbox4BottomRight{width:25px;height:25px;background:url(../../../../20131224152830id_/http_/globbert.com/files/border14.png) no-repeat -25px -25px;}
+#cbox4MiddleLeft{width:25px;background:url(../../../../20131224153509id_/http_/globbert.com/files/border24.png) repeat-y 0 0;}
+#cbox4MiddleRight{width:25px;background:url(../../../../20131224153509id_/http_/globbert.com/files/border24.png) repeat-y -25px 0;}
+#cbox4Content{background:#fff;overflow:hidden;}
+.cbox4Iframe{background:#fff;}
+#cbox4Error{padding:50px;border:1px solid #ccc;}
+#cbox4LoadedContent{margin-bottom:20px;padding: 5px;}
+#cbox4Title{position:absolute;bottom:0px;left:0;text-align:center;width:100%;color:#999;}
+#cbox4Current{position:absolute;bottom:0px;left:100px;color:#999;}
+#cbox4Slideshow{position:absolute;bottom:0px;right:42px;color:#444;}
+#cbox4Previous{position:absolute;bottom:0px;left:0;color:#444;}
+#cbox4Next{position:absolute;bottom:0px;left:63px;color:#444;}
+#cbox4LoadingOverlay{background:#fff url(../../../../20131224152944id_/http_/globbert.com/files/loading4.gif) no-repeat 5px 5px;}
+#cbox4Close{position:absolute;bottom:0;right:0;display:block;color:#444;}
+/*
+The following fixes a problem where IE7 and IE8 replace a4.png's alpha transparency with a black fill
+when an alpha filter (opacity change) is set on the element or ancestor element. This style is not applied to or needed in IE9.
+See:http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cbox4IE #cbox4TopLeft,
+.cbox4IE #cbox4TopCenter,
+.cbox4IE #cbox4TopRight,
+.cbox4IE #cbox4BottomLeft,
+.cbox4IE #cbox4BottomCenter,
+.cbox4IE #cbox4BottomRight,
+.cbox4IE #cbox4MiddleLeft,
+.cbox4IE #cbox4MiddleRight{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);}
+/*
+The following provides4.png transparency support for IE6
+Feel free to remove this and the / directory if you have dropped IE6 support.
+*/
+.cbox4IE6 #cbox4TopLeft{background:url(../../../../20131224152849id_/http_/globbert.com/files/borderTopLeft4.png);}
+.cbox4IE6 #cbox4TopCenter{background:url(../../../../20131224153129id_/http_/globbert.com/files/borderTopCenter4.png);}
+.cbox4IE6 #cbox4TopRight{background:url(../../../../20131224154002id_/http_/globbert.com/files/borderTopRight4.png);}
+.cbox4IE6 #cbox4BottomLeft{background:url(../../../../20131224152915id_/http_/globbert.com/files/borderBottomLeft4.png);}
+.cbox4IE6 #cbox4BottomCenter{background:url(../../../../20131224153457id_/http_/globbert.com/files/borderBottomCenter4.png);}
+.cbox4IE6 #cbox4BottomRight{background:url(../../../../20131224153253id_/http_/globbert.com/files/borderBottomRight4.png);}
+.cbox4IE6 #cbox4MiddleLeft{background:url(../../../../20131224154131id_/http_/globbert.com/files/borderMiddleLeft4.png);}
+.cbox4IE6 #cbox4MiddleRight{background:url(../../../../20131224153309id_/http_/globbert.com/files/borderMiddleRight4.png);}
+.cbox4IE6 #cbox4TopLeft,
+.cbox4IE6 #cbox4TopCenter,
+.cbox4IE6 #cbox4TopRight,
+.cbox4IE6 #cbox4BottomLeft,
+.cbox4IE6 #cbox4BottomCenter,
+.cbox4IE6 #cbox4BottomRight,
+.cbox4IE6 #cbox4MiddleLeft,
+.cbox4IE6 #cbox4MiddleRight{_behavior:expression(this.src = this.src ? this.src :this.currentStyle.backgroundImage.split('"')[1],this.style.background = "none",this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ",sizingMethod='scale')");}
+
+/* @end */
+/* ColorBox Core Style:5 */
+
+/* @group Style 5 */
+/*  Core Style:5  */ 
+#colorbox,#cbox5Overlay,#cbox5Wrapper{position:absolute;top:0;left:0;z-index:21001;overflow:hidden;}
+#cbox5Overlay{position:fixed;width:100%;height:100%;}
+#cbox5MiddleLeft,#cbox5BottomLeft{clear:left;}
+#cbox5Content{position:relative;}
+#cbox5LoadedContent{overflow:auto;}
+#cbox5Title{margin:0;}
+#cbox5LoadingOverlay,#cbox5LoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%;}
+#cbox5Previous,#cbox5Next,#cbox5Close,#cbox5Slideshow{cursor:pointer;}
+.cbox5Photo{float:left;margin:auto;border:0;display:block;}
+.cbox5Iframe{width:100%;height:100%;display:block;border:0;}
+/* User Style:5 */
+#cbox5Overlay{background:#000;}
+#colorbox{}
+#cbox5TopLeft{width:14px;height:14px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) no-repeat 0 0;}
+#cbox5TopCenter{height:14px;background:url(../../../../20131224153236id_/http_/globbert.com/files/border5.png) repeat-x top left;}
+#cbox5TopRight{width:14px;height:14px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) no-repeat -36px 0;}
+#cbox5BottomLeft{width:14px;height:43px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) no-repeat 0 -32px;}
+#cbox5BottomCenter{height:43px;background:url(../../../../20131224153236id_/http_/globbert.com/files/border5.png) repeat-x bottom left;}
+#cbox5BottomRight{width:14px;height:43px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) no-repeat -36px -32px;}
+#cbox5MiddleLeft{width:14px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) repeat-y -175px 0;}
+#cbox5MiddleRight{width:14px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) repeat-y -211px 0;}
+#cbox5Content{background:#fff;overflow:visible;}
+.cbox5Iframe{background:#fff;}
+#cbox5Error{padding:50px;border:1px solid #ccc;}
+#cbox5LoadedContent{margin-bottom:5px;padding: 5px;}
+#cbox5LoadingOverlay{background:url(../../../../20131224153825id_/http_/globbert.com/files/loading_background5.png) no-repeat center center;}
+#cbox5LoadingGraphic{background:url(../../../../20131224153338id_/http_/globbert.com/files/loading5.gif) no-repeat center center;}
+#cbox5Title{position:absolute;bottom:-25px;left:0;text-align:center;width:100%;font-weight:bold;color:#7C7C7C;}
+#cbox5Current{position:absolute;bottom:-25px;left:58px;font-weight:bold;color:#7C7C7C;}
+#cbox5Previous,#cbox5Next,#cbox5Close,#cbox5Slideshow{position:absolute;bottom:-29px;background:url(../../../../20131224153746id_/http_/globbert.com/files/controls5.png) no-repeat 0px 0px;width:23px;height:23px;text-indent:-9999px;}
+#cbox5Previous{left:0px;background-position:-51px -25px;}
+#cbox5Previous:hover{background-position:-51px 0px;}
+#cbox5Next{left:27px;background-position:-75px -25px;}
+#cbox5Next:hover{background-position:-75px 0px;}
+#cbox5Close{right:0;background-position:-100px -25px;}
+#cbox5Close:hover{background-position:-100px 0px;}
+.cbox5Slideshow_on #cbox5Slideshow{background-position:-125px 0px;right:27px;}
+.cbox5Slideshow_on #cbox5Slideshow:hover{background-position:-150px 0px;}
+.cbox5Slideshow_off #cbox5Slideshow{background-position:-150px -25px;right:27px;}
+.cbox5Slideshow_off #cbox5Slideshow:hover{background-position:-125px 0px;}
+/* @end */
+
+/* @end */
+#stacks_in_2_page0 {
+	background-color: #000000;
+}
+/*
+ * SuperFlex v1.4
+ * Nick Cates Design
+ */
+
+
+
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+
+body .slides,
+body .flex-control-nav,
+body .flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+.flexslider {width: 100%; margin: 0; padding: 0;}
+
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}
+
+.flexslider .slides img {max-width: 100%; display: block; width: 100%; height: auto;padding:0;margin:0;}
+
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+.no-js .slides > li:first-child {display: block;}
+
+.flexslider {background: transparent; zoom: 1; position: relative;}
+
+.flexslider .slides {zoom: 1;}
+body .flexslider ul.slides, body .flexslider li { padding: 0; margin: 0;list-style: none; line-height: 0;}
+.flexslider .slides > li {position: relative;}
+
+.flex-container {zoom: 1; position: relative;}
+
+body .flex-caption { 
+height:50px; 
+background:none; 
+-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); 
+zoom: 1; 
+text-align: left; 
+width: 100%; 
+display: block; 
+text-indent: 3%;
+position: absolute; 
+left: 0; 
+bottom: 0; 
+background: rgba(0,0,0,.5); 
+color: #fff;
+text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
+font-size: 14px; 
+line-height: 3.6em;
+}
+
+.flex-direction-nav{opacity: 0;}
+.flex-direction-nav{padding: 0 !important;}
+.flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url('../../../../20131224153440id_/http_/globbert.com/files/bg_direction_nav.png') no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li .flex-next {background-position: -52px 0; right: 0;}
+.flex-direction-nav li .flex-prev {left: 0;}
+.flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+.flex-control-nav {position: absolute; line-height: 3.6em; font-size: 14px; text-align: center; bottom:0; opacity:0;width:100%;z-index:100;}
+.alignRight {text-align: right; right: 15px;width:auto;}
+
+.flex-control-nav li {position: relative; top: 4px; margin: 0 0 0 7px !important; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a { top: 5px; width: 20px; height: 20px;display: block; background: url('../../../../20131224153355id_/http_/globbert.com/files/bg_control_nav.png') no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -20px;}
+.flex-control-nav li a.flex-active {background-position: 0 -40px; cursor: default;}
+
+.flex-control-nav,.flex-direction-nav{-webkit-transition: opacity 500ms; -moz-transition: opacity 500ms; -ms-transition: opacity 500ms; -o-transition: opacity 500ms; transition: opacity 500ms;}
+.flexslider:hover .flex-control-nav,.flexslider:hover .flex-direction-nav{opacity: 1 !important;}
+ 
+
+#stacks_in_144_page0 .flexslider,#stacks_in_144_page0 ul.slides, #stacks_in_144_page0 ul.slides li,#stacks_in_144_page0 ul.slides li img{border-radius: 3px;}
+#stacks_in_144_page0 .flex-caption{border-radius: 0 0 4px 4px;}
+
+@media all and (max-width: 600px){
+    .flex-caption{visibility: hidden;}
+}
+
+@media all and (max-width: 320px){
+    .flex-direction-nav{visibility: hidden;}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .flex-control-nav li a {background-image: url('../../../../20131224153741id_/http_/globbert.com/files/bg_control_nav_2x.png') !important; -webkit-background-size: 20px 60px;}
+}
+
+
+
+
+
+
+
+
+/* Edit Mode UI  */
+
+
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_46_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_46_page0 .jwresp_col{overflow:hidden;vertical-align:top;margin-right:1.9%;width:18%;float:left}#stacks_in_46_page0 #jwresp_col5_stacks_in_46_page0{margin-right:0} @media screen and (max-width:770px){#stacks_in_46_page0 #jwresp_col1_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col2_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col3_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col4_stacks_in_46_page0{margin-top:0;margin-right:2%;width:48.5%;float:left}#stacks_in_46_page0 #jwresp_col2_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col4_stacks_in_46_page0{margin-right:0}#stacks_in_46_page0 #jwresp_col3_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col4_stacks_in_46_page0{margin-top:15px}#stacks_in_46_page0 #jwresp_col5_stacks_in_46_page0{width:100%;margin:15px 0;display:block}} @media screen and (max-width:320px){#stacks_in_46_page0 #jwresp_col1_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col2_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col3_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col4_stacks_in_46_page0,#stacks_in_46_page0 #jwresp_col5_stacks_in_46_page0{margin:15px 0;width:100%;display:block}}
+
+#stacks_in_46_page0 {
+	margin: 0px 0px 20px 20px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOB1 h3 {
+	font-size: 29px;
+	line-height: 24px;
+	color: #8D9D2E;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOB1 h3 a {
+	text-decoration: none;
+	color: #8D9D2E;
+}
+
+
+
+#stacks_in_106_page0 {
+	text-transform: capitalize;
+}
+
+#stacks_in_105_page0 {
+	margin: 10px 0px 0px 0px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOB2 h1 {
+	font-size: 17px;
+	line-height: 24px;
+	color: #7B8E24;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOB2 h1 a {
+	text-decoration: none;
+	color: #7B8E24;
+}
+
+
+
+#stacks_in_169_page0 {
+	border: solid #000000;
+	border-width:  5px;
+}
+
+#stacks_in_98_page0 {
+	margin: 15px 0px 15px 0px;
+}
+
+#stacks_in_197_page0 .stacks_left {
+	float:left;
+	width:50%;
+}
+
+#stacks_in_197_page0 .stacks_right {
+	float:right;
+	width:50%;
+}
+#stacks_in_206_page0 .stacks_left {
+	float:left;
+	width:50%;
+}
+
+#stacks_in_206_page0 .stacks_right {
+	float:right;
+	width:50%;
+}
+#stacks_in_206_page0 {
+	margin: 0px 51px 0px 51px;
+}
+
+#stacks_in_197_page0 {
+	margin: 0px 45px 0px 45px;
+	padding:  20px;
+}
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_194_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_194_page0 .jwresp_col{overflow:hidden;vertical-align:top;margin-right:2%;width:48.5%;float:left}#stacks_in_194_page0 #jwresp_col2_stacks_in_194_page0{margin-right:0} @media screen and (max-width:500px){#stacks_in_194_page0 #jwresp_col1_stacks_in_194_page0,#stacks_in_194_page0 #jwresp_col2_stacks_in_194_page0{margin:15px 0;width:100%;display:block}}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOB8 h1 {
+	font-size: 19px;
+	line-height: 24px;
+	color: #7B8E24;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOB8 h1 a {
+	text-decoration: none;
+	color: #7B8E24;
+}
+
+
+
+#stacks_in_123_page0 {
+	margin: 0px 0px 0px 15px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOB9 h3 {
+	font-size: 19px;
+	line-height: 24px;
+	color: #7B8E24;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOB9 h3 a {
+	text-decoration: none;
+	color: #7B8E24;
+}
+
+
+
+#stacks_in_194_page0 {
+	border: solid #000000;
+	border-width:  6px;
+	padding: 0px 60px 0px 70px;
+}
+
+#stacks_in_175_page0 {
+	margin: 10px 0px 0px 0px;
+}
+
+#stacks_in_134_page0 {
+	margin: 10px 0px 0px 0px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOB2 h1 {
+	font-size: 17px;
+	line-height: 24px;
+	color: #7B8E24;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOB2 h1 a {
+	text-decoration: none;
+	color: #7B8E24;
+}
+
+
+
+#stacks_in_37_page0 {
+	margin: 10px 0px 0px 0px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOB2 h1 {
+	font-size: 17px;
+	line-height: 25px;
+	color: #7B8E24;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOB2 h1 a {
+	text-decoration: none;
+	color: #7B8E24;
+}
+
+
+
+#stacks_in_30_page0 {
+	margin: 0px 0px 10px 0px;
+}
+
+#stacks_in_35_page0 {
+	margin: 10px 0px 0px 0px;
+}
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_177_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_177_page0 .jwresp_col{overflow:hidden;vertical-align:top;margin-right:2%;width:48.5%;float:left}#stacks_in_177_page0 #jwresp_col2_stacks_in_177_page0{margin-right:0} @media screen and (max-width:320px){#stacks_in_177_page0 #jwresp_col1_stacks_in_177_page0,#stacks_in_177_page0 #jwresp_col2_stacks_in_177_page0{margin:15px 0;width:100%;display:block}}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#glob1 h1 {
+	font-size: 17px;
+	line-height: 31px;
+	color: #8D9D2E;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#glob1 h1 a {
+	text-decoration: none;
+	color: #8D9D2E;
+}
+
+
+
+#stacks_in_222_page0 {
+	padding: 15px 0px 0px 0px;
+}
+
+#stacks_in_224_page0 {
+	margin: 10px 0px 0px 0px;
+}
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_186_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_186_page0 .jwresp_col{overflow:hidden;vertical-align:top;margin-right:2%;width:48.5%;float:left}#stacks_in_186_page0 #jwresp_col2_stacks_in_186_page0{margin-right:0} @media screen and (max-width:320px){#stacks_in_186_page0 #jwresp_col1_stacks_in_186_page0,#stacks_in_186_page0 #jwresp_col2_stacks_in_186_page0{margin:15px 0;width:100%;display:block}}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 24px;
+	color: #7B8E23;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B8E23;
+}
+
+
+
+#stacks_in_220_page0 {
+	margin: 30px 0px 0px 0px;
+}
+
+#stacks_in_226_page0 {
+	margin: 10px 0px 0px 0px;
+}
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_228_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_228_page0 .jwresp_col{overflow:hidden;vertical-align:middle;margin-right:2%;width:48.5%;float:left}#stacks_in_228_page0 #jwresp_col2_stacks_in_228_page0{margin-right:0} @media screen and (max-width:320px){#stacks_in_228_page0 #jwresp_col1_stacks_in_228_page0,#stacks_in_228_page0 #jwresp_col2_stacks_in_228_page0{margin:15px 0;width:100%;display:block}}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 24px;
+	color: #7B891D;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B891D;
+}
+
+
+
+#stacks_in_233_page0 {
+	margin: 15px 0px 0px 20px;
+}
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_51_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_51_page0 .jwresp_col{overflow:hidden;vertical-align:top;margin-right:2%;width:48.5%;float:left}#stacks_in_51_page0 #jwresp_col2_stacks_in_51_page0{margin-right:0} @media screen and (max-width:500px){#stacks_in_51_page0 #jwresp_col1_stacks_in_51_page0,#stacks_in_51_page0 #jwresp_col2_stacks_in_51_page0{margin:15px 0;width:100%;display:block}}
+
+#stacks_in_49_page0 {
+	margin: 10px 0px 0px 0px;
+}
+
+#stacks_in_235_page0 {
+	margin: 10px 0px 0px 0px;
+}
+
+#stacks_in_51_page0 {
+	border: solid #000000;
+	border-width:  2px;
+}
+/* Responsive Layout v1.2.0 Copyright @2010-2012 Joe Workman */
+#stacks_in_54_page0 .jwresp_wrapper{width:100%;overflow:auto}#stacks_in_54_page0 .jwresp_col{overflow:hidden;vertical-align:top;margin-right:2%;width:48.5%;float:left}#stacks_in_54_page0 #jwresp_col2_stacks_in_54_page0{margin-right:0} @media screen and (max-width:500px){#stacks_in_54_page0 #jwresp_col1_stacks_in_54_page0,#stacks_in_54_page0 #jwresp_col2_stacks_in_54_page0{margin:15px 0;width:100%;display:block}}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 24px;
+	color: #7B891D;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B891D;
+}
+
+
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 24px;
+	color: #7B891D;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B891D;
+}
+
+
+
+#stacks_in_54_page0 {
+	margin: 0px 0px 10px 0px;
+}
+
+#stacks_in_45_page0 {
+	border: solid #000000;
+	border-width:  10px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 25px;
+	color: #7B891D;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B891D;
+}
+
+
+
+#stacks_in_107_page0 {
+	margin: 0px 0px 10px 0px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 25px;
+	color: #7B891D;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B891D;
+}
+
+
+
+#stacks_in_121_page0 {
+	margin: 0px 0px 10px 0px;
+}
+/*
+-------------------------------------------
+File: Blueball FontStylr 1, v7.0 for Stacks 2  
+fontstylr01.css Style Sheet
+Created: 14, April, 2011
+Last Modified: 20, January, 2012
+Author: Charlie Lockhart, Blueball Design
+www.blueballdesign.com
+Copyright 2010-2012 Charlie Lockhart/Blueball Design USA
+All Rights Reserved
+-------------------------------------------
+*/
+
+#GLOBB4 h1 {
+	font-size: 17px;
+	line-height: 25px;
+	color: #7B891D;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 0px;
+	letter-spacing: 0px;
+	cursor: default;
+}
+
+#GLOBB4 h1 a {
+	text-decoration: none;
+	color: #7B891D;
+}
+
+
+
+#stacks_in_100_page0 {
+	margin: 0px 0px 10px 0px;
+}
+
+#stacks_out_103_page0 {
+	width: 250px;
+}
+
+#stacks_in_103_page0 {
+	border: solid #000000;
+	border-width:  10px;
+}
+
+#stacks_in_89_page0 {
+	margin: 0px 0px 20px 0px;
+}
+
+#stacks_in_0_page0 {
+	background-color: #000000;
+	-moz-border-radius:  8px;
+	-webkit-border-radius:  8px;
+	border-radius:  8px;
+}

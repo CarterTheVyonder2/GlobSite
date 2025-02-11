@@ -1,0 +1,1105 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+h1 {font-size: 1.7em;}
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.3em;}
+h6 {font-size: 1.2em;}
+
+body{
+	background: #222 url('../../../../../../20131224153904id_/http_/globbert.com/rw_common/themes/venture/images/noise1.jpg'); 	
+	font: normal 14px/22px Arial, Helvetica, Geneva, sans-serif; -webkit-font-smoothing: antialiased;
+	}
+
+a{
+	color: #ccc;
+	text-decoration: none;
+	}
+
+strong, b{
+	font-weight: bolder;
+	}
+
+em, i{
+	font-style: italic;
+	}
+
+p{
+	padding: 10px 0;
+	}
+
+ul, ol {
+    margin-bottom: 18px;
+    padding-left: 15px;
+	}
+
+.image-left{
+    float: left;
+    padding: 18px;
+	}
+
+.image-right{
+    float: right;
+    padding: 18px;
+	}
+
+blockquote{
+	font-family: georgia, sarif;
+	font-style: italic;
+	}
+
+code{
+    margin: 18px 0;
+    padding: 13px 18px;
+    display: block;
+    font: 12px 'Courier New', Courier, monospace;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+	}
+
+/* LIST ELEMENTS */
+
+ul.disc { list-style-type: disc; }
+ul.circle{ list-style-type: circle; }
+ul.square{ list-style-type: square; }
+ol.arabic-numbers{ list-style-type: decimal; }
+ol.upper-alpha{ list-style-type: upper-alpha; }
+ol.lower-alpha{ list-style-type: lower-alpha; }
+ol.upper-roman{ list-style-type: upper-roman; }
+ol.lower-roman{ list-style-type: lower-roman; }
+
+
+#wrapper{
+	position: relative;
+	width: 960px;
+	padding: 0;
+	margin: 68px auto;
+	box-shadow: 0px 3px 15px rgba(0,0,0,.8);
+	}
+
+#navAlt{
+	position: absolute;
+	}
+
+#titleAlt{
+	position: absolute;
+	top: -95px;
+	line-height: 95px;
+	height: 95px;
+	}
+
+#titleAlt #logo{
+	display: block;
+	height: 95px;
+	line-height: 95px;
+	float: left;
+	}
+	
+#titleAlt #logo img{
+	display: inline;
+	vertical-align: middle;
+	margin-right: 20px;
+	}
+
+header #logo{
+	display: none;	
+	}
+
+#titleAlt h1,
+#titleAlt h2{
+	display: inline;
+	}
+
+header{
+	height: 440px;
+	min-height:200px;
+	position: relative;
+	-webkit-font-smoothing: subpixel-antialiased;	
+	}
+
+header h1{
+	position: absolute;
+	top: 50px;
+	height: 150px;
+	padding-top: 25px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background: url('../../../../../../20131224154452id_/http_/globbert.com/rw_common/themes/venture/images/vslice.png') no-repeat top center;
+	z-index: 10;
+	}
+
+#titleAlt h1,
+#titleAlt h2,
+header h1{
+	font-size: 33px;
+	font-family: 'Gruppo', cursive;	
+	text-shadow: rgba(0,0,0,0.9) 0 -1px 5px;	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: normal;
+	}
+	
+#titleAlt h2{
+	font-size: 12px;
+	padding-left: 30px;}
+
+header h2{
+	position: absolute;
+	color: #fff;
+	z-index: 10;
+	text-align: center;
+	width: 100%;
+	top: 160px;
+	color: #383a3d;
+	font-family: georgia;
+	font-size: 10px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 1px}
+
+nav{
+	position: absolute;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(0,0,0,0.66);
+	width: 100%;
+	font-size: 0.9em;
+	text-align: center;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,.1);
+	z-index: 1000;
+	}
+	
+.ie8 nav {
+	background: url('../../../../../../20131224155030id_/http_/globbert.com/rw_common/themes/venture/images/navbar.png') repeat-x left top!important;
+	}
+
+.ie8 nav ul ul{
+	background: url('../../../../../../20131224154512id_/http_/globbert.com/rw_common/themes/venture/images/subnav.png') repeat!important;
+	filter: none!important;
+	}
+
+.ie9 nav ul ul{
+	background-color: rgba(0,0,0,0.50);
+	filter: none;
+	}
+
+nav,header, #feature{
+	border-radius: 4px 4px 0 0;
+	}
+
+#feature, #feature img{
+	border-radius: 5px 5px 0 0;
+	}
+
+#wrapper{
+	border-radius: 4px;
+	}
+
+nav ul li{
+	display: inline-block;
+	position: relative;
+	}
+	
+nav ul li a{
+	padding: 15px 25px;
+	padding-left: 30px;
+	text-shadow: #000 0 -1px 0;
+	text-decoration: none;
+	color: #ccc;
+	letter-spacing: 3px;
+	font-size: 11px;
+	font-family: 'Spinnaker', sans-serif;	
+	text-transform: uppercase;
+	-webkit-transition: all 450ms; 
+	-moz-transition: all 450ms; 
+	-ms-transition: all 450ms; 
+	-o-transition: all 450ms; 
+	transition: all 450ms;
+	}
+
+nav ul li a:hover{
+	text-shadow: #fff 0 0 10px, #fff 0 0 25px;
+	color: #fff;
+	}
+
+nav ul ul {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    display: none;
+    list-style: none;
+    width: 140px;
+    -webkit-border-radius: 0 0 1px 1px;
+    -moz-border-radius: 0 0 1px 1px;
+    line-height: 0px;
+    border-radius: 1px 1px 1px 1px;
+    background-color: rgba(0,0,0,0.26);
+   	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)), to(rgba(0, 0, 0, 0.50)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.50));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.50));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.50));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.50));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.50));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#000000');
+    z-index: 100;
+	}
+
+nav.titleAlt ul ul{
+	background-color: rgba(0,0,0,0.66);
+	background-image: none;
+	}
+
+.ie8 nav.titleAlt ul ul{
+	background: url('../../../../../../20131224154512id_/http_/globbert.com/rw_common/themes/venture/images/subnav.png') repeat!important;
+	}	
+
+nav>.wrapper>ul>li>ul{ top:37px;}
+
+nav li li {
+    padding: 0;
+    margin: 0;
+    line-height: 0px;
+    position: relative;
+	}
+
+nav li li a{
+    display: block;
+    letter-spacing: 0;
+    font-size: 10px;
+    line-height: 18px;
+    width: 120px;
+    padding: 8px 10px;
+	}
+
+/* Drop Down */
+
+nav > ul > li > ul {
+    left:0;
+    top: 50px;
+	}
+
+nav li:hover li ul{
+    top: -999em;
+	}
+
+nav li:hover ul.nojs{
+    display: block;
+	}
+
+nav li li:hover ul {
+    left: 140px;
+    top: 0px;
+	}
+
+nav li li:hover li ul{
+    top: -999em;
+	}
+
+nav li li li:hover ul{
+    left: 140px;
+    top: 0px;
+	}
+
+nav li li li:hover li ul{
+    top: -999em;
+	}
+	
+nav li li li li:hover ul{
+    left: 140px;
+    top: 0px;
+	}
+
+nav li li li li:hover li ul{
+    top: -999em;
+	}
+
+nav li li li li li:hover ul{
+    left: 140px;
+    top: 0px;
+	}
+
+/* @end */
+
+/*  Banner  */
+
+#feature{
+	height: 440px;
+	background: url('../../../../../../20131224155349id_/http_/globbert.com/rw_common/themes/venture/images/feature4.jpg') no-repeat left top;
+	position: relative;
+	}
+
+.sfback {
+	background: url('../../../../../../20131224154749id_/http_/globbert.com/rw_common/themes/venture/images/sfback.jpg') no-repeat left top!important;
+	}
+
+.flexslider{
+	height: 440px;
+}
+
+#inset{
+	height: 23px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	background: url('../../../../../../20131224154154id_/http_/globbert.com/rw_common/themes/venture/images/feature_grad.png') repeat-x left top;
+	}
+	
+#container{
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,.1);	width: 100%;
+	border-radius: 0 0 4px 4px;
+	background: url('../../../../../../20131224154938id_/http_/globbert.com/rw_common/themes/venture/images/sidebar2.png') repeat-y top right, url('../../../../../../20131224153852id_/http_/globbert.com/rw_common/themes/venture/images/content_grad.png') repeat-x top left;
+	text-shadow: rgba(0,0,0,0.3) 0 -1px 0;
+	min-height: 150px;
+	line-height: 24px;
+	}
+
+#titlep{
+	box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+	border: 1px solid rgba(255,255,255,0.05);
+	background: rgba(255,255,255,0.05);
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: arial;
+	text-align: center;
+	margin: 5px 5px 25px 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 5px;	
+	}
+
+#texth{  
+	box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+	border: 1px solid rgba(255,255,255,0.05);
+	background: rgba(255,255,255,0.05);
+	margin: 5px 5px 0px 5px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	border-bottom: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	}
+
+#textp{	
+	box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+	border: 1px solid rgba(255,255,255,0.05);
+	background: rgba(255,255,255,0.05);
+	margin: 0px 5px 25px 5px;
+	padding: 15px 5px 10px 15px;
+	font-size: 14px;
+	word-wrap: break-word;
+	}
+
+.ie8 #titlep, .ie8 #texth, .ie8 #textp {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0CFFFFFF,endColorstr=#0CFFFFFF)"; /* IE8 */
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0CFFFFFF,endColorstr=#0CFFFFFF);   /* IE6 & 7 */
+	      zoom: 1;
+	}
+
+#container a{
+	-webkit-transition: all 450ms; 
+	-moz-transition: all 450ms; 
+	-ms-transition: all 450ms; 
+	-o-transition: all 450ms; 
+	transition: all 450ms;
+	}
+	
+#container a:hover{
+	text-shadow: #fff 0 0 3px, #fff 0 0 6px;
+	color: #fff;
+	}
+/*	
+#container ul.section{
+	margin: 10px; padding: 5px;
+	}
+
+#container ul ul.navigation{
+	margin: 0px 0 0px 10px; padding: 0px 0px 0px 5px;
+	}
+
+#container ul.navigation{
+	margin-left: 0px; padding-left: 0px; padding-bottom: 20px;
+	}
+*/
+
+ul#breadcrumb{
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0.66);	
+	height: 40px;
+	line-height: 40px;
+	list-style: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 10px;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.3) 0 -1px 0;
+	font-family: 'Spinnaker', sans-serif;
+	}
+
+.ie8 ul#breadcrumb{
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A8000000,endColorstr=#A8000000)"; /* IE8 */
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A8000000,endColorstr=#A8000000);   /* IE6 & 7 */
+	      zoom: 1;
+	}
+
+#breadcrumb {
+	width: 960px;
+	}
+
+ul#breadcrumb li{
+	display: inline;
+	}
+
+ul#breadcrumb li:first-child{
+	padding-left: 30px;
+	}
+
+.clear{
+	clear: both;
+	}
+	
+section{
+	width: 695px;
+	float: left;
+	overflow: hidden;
+	padding-bottom: 20px;
+	}
+	
+section #padding{
+	padding: 25px 25px 30px 25px;
+	overflow: hidden;
+	/*padding: 5px;*/
+	}
+
+#footer{
+	font-family: arial;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,0.9) 0 -1px 1px;
+	margin-left: 30px;
+	position: absolute;
+	bottom: 20px;
+	}
+		
+		
+aside{
+	width: 205px;
+	padding: 30px;
+	padding-top: 5px;
+	float: right;
+	}
+
+@font-face {
+    font-family: 'SocialicoRegular';
+    src: url('https://web.archive.org/web/20131224154942id_/http://globbert.com/rw_common/themes/venture/fonts/socialico-webfont.eot');
+    src: url('https://web.archive.org/web/20131224154942id_/http://globbert.com/rw_common/themes/venture/fonts/socialico-webfont.eot#iefix') format('embedded-opentype'),
+         url('https://web.archive.org/web/20131224155027id_/http://globbert.com/rw_common/themes/venture/fonts/socialico-webfont.woff') format('woff'),
+         url('https://web.archive.org/web/20131224154631id_/http://globbert.com/rw_common/themes/venture/fonts/socialico-webfont.ttf') format('truetype'),
+         url('https://web.archive.org/web/20131224154354id_/http://globbert.com/rw_common/themes/venture/fonts/socialico-webfont.svg#SocialicoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+aside #socialicons{
+	margin: 0px 0px 5px 0px;
+	padding: 30px 0px 5px 0px;
+	position: relative;
+	text-shadow: rgba(0,0,0,0.3) 0 -1px 0;
+	-webkit-transition: text-shadow 450ms; 
+	-moz-transition: text-shadow 450ms;
+	}	
+
+a.social{
+	font-family: 'SocialicoRegular';
+	line-height: normal;
+	float: left;
+	font-size: 28px;
+	letter-spacing: 20px;
+	padding: 0px 0 45px 0px;
+	}
+
+a.social:hover{
+	text-shadow: #fff 0 0 10px, #fff 0 0 25px!important;
+	color: #fff!important;
+}
+
+#padding #socialicons{
+	padding-top: 5px;
+	display: none;
+	}
+
+#padding a.social{
+	float: none;
+	
+	}
+
+.hasNav{
+	padding: 10px 30px 30px;
+	}
+	
+#sideTitle{
+	width: 205px;
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	padding: 0px 0px 20px 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: rgba(0,0,0,0.3) 0 -1px 0;
+	top: -10px;
+	}
+
+.siST {top: 0;}
+
+.fnav{
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-perspective: 1000;
+	}
+	
+/* @group Blog */
+/* @group Archive Page */
+.blog-archive-background{}
+.blog-entry-summary{}
+.blog-archive-headings-wrapper{
+	display: none;
+	}
+.blog-archive-entries-wrapper{}
+.blog-archive-entries-wrapper .blog-entry{}
+.blog-archive-month{}
+.blog-archive-link{}
+.blog-archive-link a:link,.blog-archive-link a:visited{}
+/* @end */
+
+.blog-entry{
+	margin:0 0 3em;padding:0;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+	background: rgba(255,255,255,0.03);
+	border-radius: 2px;
+	overflow: hidden;
+	}
+
+h1.blog-entry-title{
+	font-size: 13px;
+	font-weight:normal;
+	letter-spacing: 2px; 
+	padding: 1.5% 2.5%; 
+	position: relative;
+	width: 95%;
+	border: 1px solid rgba(255,255,255,0.05);
+	box-shadow: 0px 2px 5px rgba(0,0,0,.4);	
+	background: rgba(255,255,255,0.07);
+	border-radius: 2px 2px 0px 0px;	
+	}
+	
+h1.blog-entry-title a{
+	padding: 10px 10px 5px 10px;
+	-webkit-transition: all 450ms; 
+	-moz-transition: all 450ms; 
+	-ms-transition: all 450ms; 
+	-o-transition: all 450ms; 
+	transition: all 450ms;
+	}
+	
+h1.blog-entry-title a:hover{
+	text-shadow: #fff 0 0 10px, #fff 0 0 25px;
+	color: #fff;
+	}
+	
+.blog-entry-date{
+	font-size:0.8em;
+	line-height:1.5em; 
+	letter-spacing: 1px; 
+	padding: 20px 0px 10px 20px;
+	position: relative;
+	border: 1px solid rgba(255,255,255,0.05);
+	border-bottom: none;
+	}
+
+.blog-entry-category{}
+.blog-entry-category a:link,.blog-entry-category a:visited{}
+.blog-read-more{}
+.blog-entry-body{
+	padding: 5px 20px 0px 20px;
+	border: 1px solid rgba(255,255,255,0.05);
+	border-top: none;
+	overflow: hidden;
+	}
+	
+.blog-entry-comments{
+	font-size:0.8em;
+	text-align:right;
+	}
+	
+p.blog-entry-tags{
+	font-size:0.8em;
+	margin:10px 0;
+	}
+
+/* @group blog sidebar */
+.plugin_sidebar{}
+/* Styles the blog categories in the blog sidebar */
+
+#blog-categories{
+	margin:1em 0 0;
+	padding:1em 0 0;
+	}
+	
+#blog-categories a{
+	-webkit-transition: all 450ms; 
+	-moz-transition: all 450ms; 
+	-ms-transition: all 450ms; 
+	-o-transition: all 450ms; 
+	transition: all 450ms;
+	}
+	
+#blog-categories a:hover{
+	text-shadow: #fff 0 0 10px, #fff 0 0 25px;
+	color: #fff;
+	}
+	
+#blog-categories:before{
+	content:"Categories:";
+	display:block;
+	font-size:1.0em;
+	margin-bottom:0.25em;
+	letter-spacing: 1px; 
+	text-transform: uppercase;
+	}
+	
+.blog-category-link-enabled{}
+.blog-category-link-disabled{}
+/* styles the archives in the blog sidebar */
+#blog-archives{
+	margin:1em 0 0;
+	padding:1em 0 0;}
+
+#blog-archives:before{
+	content:"Archives:";
+	display:block;
+	font-size:1.0em;
+	margin-bottom:0.25em;
+	letter-spacing: 1px; 
+	text-transform: uppercase;
+	}
+	
+#blog-archives br{display:none;}
+.blog-archive-link-enabled:after{content:", ";}
+.blog-archive-link-enabled{}
+.blog-archive-link-disabled:after{content:", ";}
+.blog-archive-link-disabled{display:inline;margin-right:5px;}
+/* styles the Tag Cloud in the sidebar */
+ul.blog-tag-cloud{
+	margin:1em 0 0;
+	padding:1em 0 0; 
+	}
+	
+ul.blog-tag-cloud:before{
+	content:"Tag cloud:";
+	display:block;
+	font-size:1.0em;
+	margin-bottom:0.25em;
+	letter-spacing: 1px; 
+	text-transform: uppercase;
+	}
+	
+ul.blog-tag-cloud li{
+	display:inline;
+	margin:0 5px 0 0;
+	padding:0;
+	}
+	
+ul.blog-tag-cloud li a:after{content:",";}
+ul.blog-tag-cloud li a{
+	-webkit-transition: all 450ms; 
+	-moz-transition: all 450ms; 
+	-ms-transition: all 450ms; 
+	-o-transition: all 450ms; 
+	transition: all 450ms;
+	}
+
+ul.blog-tag-cloud li a:hover{
+	text-shadow: #fff 0 0 10px, #fff 0 0 25px;
+	color: #fff;
+	}
+	
+.blog-tag-size-1{font-size:0.8em;}
+.blog-tag-size-2{font-size:0.85em;}
+.blog-tag-size-3{font-size:0.9em;}
+.blog-tag-size-4{font-size:0.95em;}
+.blog-tag-size-5{font-size:1em;}
+.blog-tag-size-6{font-size:1.05em;}
+.blog-tag-size-7{font-size:1.1em;}
+.blog-tag-size-8{font-size:1.15em;}
+.blog-tag-size-9{font-size:1.2em;}
+.blog-tag-size-10{font-size:1.25em;}
+.blog-tag-size-11{font-size:1.3em;}
+.blog-tag-size-12{font-size:1.35em;}
+.blog-tag-size-13{font-size:1.4em;}
+.blog-tag-size-14{font-size:1.45em;}
+.blog-tag-size-15{font-size:1.5em;}
+.blog-tag-size-16{font-size:1.55em;}
+.blog-tag-size-17{font-size:1.6em;}
+.blog-tag-size-18{font-size:1.65em;}
+.blog-tag-size-19{font-size:1.7em;}
+.blog-tag-size-20{font-size:1.75em;}
+
+/* Styles the blog RSS feeds in the blog sidebar */
+#blog-rss-feeds{
+	margin:1em 0 0;
+	padding:1em 0 0;
+	}
+#blog-rss-feeds:before{
+	content:"Feeds:";
+	display:block;
+	font-size:1.0em;
+	margin-bottom: .25em;
+	letter-spacing: 1px; 
+	text-transform: uppercase;
+	}
+	
+.blog-rss-link{
+	background: url('../../../../../../20131224154316id_/http_/globbert.com/rw_common/themes/venture/images/rss-icon.png') no-repeat;
+	background-position: 0 2px;
+	display: inline-block; padding-left: 23px;
+	}
+	
+.blog-comments-rss-link{}
+/* @end */
+/* @end */
+
+/* @group Photo Album */
+
+.album-title {
+   	font-size: 13px;
+   	font-weight:normal;
+   	letter-spacing: 3px; 
+   	padding: 1.5% 2.5%;    
+   	position: relative;
+   	width: 100%;
+	text-transform: uppercase;     
+    }
+
+.album-description {
+    margin: 10px 0 20px 0;
+    font-family: sans-serif;
+	}
+
+.album-wrapper {}
+
+.thumbnail-wrap {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-bottom: 64px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.8);    
+	}
+
+.thumbnail-frame {}
+
+.thumbnail-frame:hover {}
+
+.thumbnail-frame a {}
+
+.thumbnail-frame a:hover {}
+
+.thumbnail-frame a img {
+	border-radius: 2px; 
+	box-shadow: 0px 1px 3px #000;
+	}
+
+.thumbnail-frame a img:hover {}
+
+.thumbnail-caption {
+    padding: 5px 0 10px;
+    margin: 0;
+    font-size: 1.0em;
+    text-align: left;
+    line-height: 12px;
+    height: 30px;
+    text-shadow: rgba(0,0,0,0.9) 0 -1px 1px;
+   	}
+    
+/* @end */
+
+/* @group Single Page (Photo view) */
+
+.photo-background {
+    text-align: center;
+    background-color: black;
+    background-image: url(../../../../../../20131224155200id_/http_/globbert.com/rw_common/themes/venture/images/noise_light.html);
+	}
+
+.photo-background p{
+    text-align: left;
+    margin: 0;
+	}
+
+.photo-navigation {
+    width: 860px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    border-top: none;
+    height: 102px;
+    position: relative;
+    top: -6px;
+    text-align: left;
+    font-size: 1.6em;
+    color: black;
+	}
+
+.photo-links {
+    position: absolute;
+    top: 80px;
+    font-size: .8em;
+	}
+
+.photo-navigation a:link, .photo-navigation a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    line-height: 18px;
+    font-size: .8em;
+	}
+
+.photo-navigation a:hover {
+    text-decoration: none;
+    color: #878787;
+	}
+
+.photo-frame{
+    border: 8px solid #484848;
+    margin-top: 30px;
+	}
+
+.photo-background p.photo-title {
+    padding-bottom: 2px;
+    color: #fff;
+    line-height: 26px;
+    font-size: .8em;
+	}
+
+.photo-background p.photo-caption {
+    font-size: 12px;
+    line-height: 16px;
+    color: #878787;
+	}
+
+    
+/* @end */
+
+/* @group Single Page (Photo view) */
+
+/* @group File Sharing */
+
+.filesharing-description {
+	margin: 3px 0 5px 0;
+	padding-bottom: 20px;
+	font-style: normal;
+	line-height: 1.9em;
+	font-size: 13px;
+	font-family: arial;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	}
+
+.filesharing-item {
+	display: inline-block;
+	position: relative;
+	margin: 0 20px 40px 0px;
+	width: 186px;
+	float: left;
+	}
+
+.filesharing-item-title a:hover {
+    opacity: 1;
+	text-shadow: #fff 0 0 10px, #fff 0 0 25px;
+    color: #fff;
+    }
+
+.filesharing-item-title {
+	font-size: 11px;
+	display: inline-block;
+	padding: 0 5%;
+	margin-left: 10px;
+	line-height: 1.9em;
+	background: rgba(255, 255, 255, .05);
+	border: 1px solid rgba(255,255,255,0.05);
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	box-shadow: -1px -1px 1px rgba(0,0,0,.3);
+	border-radius: 2px 2px 0 0;
+	}
+
+.filesharing-item-title a:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	}
+
+.filesharing-item-description {
+	position: relative;
+	top: -2px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+	border: 1px solid rgba(255,255,255,0.05);
+	background: rgba(255,255,255,0.1);
+	font-size: 11px;
+	min-height: 80px;
+	width: 86%;
+	padding: 7%;
+	border-radius: 2px;
+	line-height: 15px;
+	}
+
+/* @end */
+
+/* @group Quicktime Page */
+
+.movie-description {}
+    
+/* @end */
+
+/* @group Quicktime Album */
+
+/* @group Index Page (Movie Thumbnail view) */
+
+.movie-page-title {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 3px;
+	}
+
+.movie-page-description {
+   padding: 5px 0px 20px 0px;
+   }
+
+.movie-thumbnail-frame {
+    float: left;
+    padding: 0px;
+    margin: 0 20px 20px 0px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.05);
+    font-size: 10px;
+    width: 186px;
+    height: 186px;
+	}
+	
+.movie-thumbnail-frame img{
+	width: 150px !important;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+	height: 100px;
+	margin: 18px;
+	}
+
+.movie-thumbnail-caption{
+	text-transform: uppercase;
+	padding: 0 18px;
+	line-height: 15px;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+	}
+
+.movie-thumbnail-frame:hover{}
+
+.movie-background {
+    padding: 24px;
+    text-align: center;
+	}
+
+.movie-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 20px 0;
+	}
+
+.movie-frame {
+    margin-bottom: 10px;
+	} 
+    
+/* @end */
+
+/* @group Single Page (Movie View) */
+
+.movie-background {
+    margin: 0;
+    padding: 24px;
+    text-align: center;
+	}
+
+.movie-title {
+    font-size: 1em;
+    line-height: 1.1em;
+    margin: 20px 0;
+	}
+
+.movie-frame {
+    margin-bottom: 10px;
+	}
+
+
+/* @end */
+
+
+/* @end */
+
+
+/* @group Contact Form */
+
+#padding .message-text{
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 3px;
+	}
+	
+form div label {
+	text-transform: uppercase; 
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	}
+	
+.form-input-field {
+    width: 60%; 
+    border: none;
+    border-radius: 1px;
+    padding: 7px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+    border: 1px solid rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.05);
+    outline-color: #1F2226;
+    outline-width: 1px;
+    } 
+
+.form-input-button {
+ 	padding: 8px;
+    border: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: arial;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.4);   
+    border: 1px solid rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.05);
+    -webkit-appearance: none;
+    } 
+
+
+
+.form-input-button:hover{
+    border: 1px solid #1F2226;
+	}
+
+/* @end */

@@ -1,0 +1,26 @@
+body,.form-input-field {color: #A4A4A4;}
+#wrapper{background-color: #1F2226;}
+#titleAlt h1,
+header h1 {color:#FFFFFF;}
+#titleAlt h2,
+header h2 {color: #FFFFFF;}
+nav ul li a, aside ul li a, a {color: #B7B8BB;}
+ul#breadcrumb  {color: #848588;}
+ul#breadcrumb {background-color: #1F2226;
+}
+.filesharing-item {border-bottom-width: 1px solid #383B3F;}
+
+.thumbnail-caption {color: #85888C}
+.form-input-field {background-color: #383B3F;}
+.form-input-button{background-color: #383B3F;}
+.form-input-button {color: #A4A4A4;}
+#footer {
+	color: #A4A4A4;
+}
+
+#container a {
+		color: #A4A4A4;
+	}
+
+a.social {
+	color: #DDDDDD!important;}

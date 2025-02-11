@@ -1,0 +1,12 @@
+#titleAlt{
+	left: -1px;
+	padding-left: 1px;
+}
+
+header{
+	min-height:0;
+}
+
+#wrapper{
+	margin: 95px auto;
+}
